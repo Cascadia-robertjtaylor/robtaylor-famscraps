@@ -12,4 +12,4 @@ Family Scraps, Hayden's Scraps, Brady's Scraps, Copper's Scraps- On Headers
 Need Logo
 
 Dated pages with title of event
--inside=pics, video and quotes
+inside=pics, video and quotes
