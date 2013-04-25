@@ -12,6 +12,7 @@
 </head>
 
 <body>
+	<!--Page: Home-->
 	<div data-role="page" id="home"
     	data-theme="d"
         data-title="FamScraps: Home"> 
@@ -24,8 +25,10 @@
                 <a data-role="button" href="#hayden">Hayden</a>
                 <a data-role="button" href="#brady">Brady</a>
                 <a data-role="button" href="#copper">Copper</a>
-            </div><!--control group links-->
+            </div><!--links-->
 	</div><!--home page-->
+    
+    <!--Page: Hayden-->
     <div data-role="page" id="hayden"
     	data-theme="a">
         	<div data-role="header"
@@ -52,9 +55,10 @@
                         <p>Loot!</p>
                     </div><!--collapsible-->
                 </div><!--accordion-->
-            </div><!--content-->
-            
-    </div>
+            </div><!--content-->            
+    </div><!--Hayden-->
+    
+    <!--Page: Brady-->
     <div data-role="page" id="brady"
     	data-theme="b">
             <div data-role="header"
@@ -81,9 +85,10 @@
                         <p>Welcome to Hotel Transylvania!</p>
                     </div><!--collapsible-->
                 </div><!--accordion-->
-            </div><!--content-->
-            
-    </div>
+            </div><!--content-->            
+    </div><!--Brady-->
+    
+    <!--Page: Copper-->
     <div data-role="page" id="copper"
     	date-theme="c">
             <div data-role="header"
@@ -98,20 +103,28 @@
             	<img src="images/copper.gif" alt="Copper"/>
                 <div data-role="collapsible-set">
                 	<div data-role="collapsible">
-                    	<h3>New addition</h3>
-                        <p>I love my new home!</p>
+                    	<h3>First Snow</h3>
+                        <div class="ui-grid-a">
+                        	<div class="ui-block-a">
+                            	<img src="images/copsnow1.gif" alt="coppersnow1"/>
+                            </div><!--first image in grid-->
+                            <div class="ui-block-b">
+                            	<img src="images/copsnow2.gif" alt="coppersnow2"/>
+                            </div><!--second image in grid-->
+                        </div><!--image grid-->
+                        <p>What is this white stuff?</p>
                     </div><!--collapsible-->
                     <div data-role="collapsible">
                     	<h3>Making friends</h3>
                         <p>Who is this little guy?</p>
-                    </div><!--collapsible-->
-                    <div data-role="collapsible">
-                    	<h3>First Snow</h3>
-                        <p>What is this white stuff?</p>
-                    </div><!--collapsible-->
+                    </div><!--collapsible--> 
+                	<div data-role="collapsible">
+                    	<h3>New addition</h3>
+                        <p>I love my new home!</p>       	
+                    </div><!--collapsible-->                                       
                 </div><!--accordion-->
-            </div>
-            
-    </div>
+            </div><!--Content-->            
+    </div><!--Copper-->
+    
 </body>
 </html>
