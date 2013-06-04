@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.rjtaylorjr.www"
+        versionCode="1" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <!-- <icon src="images/logo.png" /> -->
+    
+    <name>FamScraps</name>
+
+    <description>
+        scrapbook app for anyone interested in tracking important family moments
+    </description>
+
+    <author href="https://rjtaylorjr.com" email="robkcseattle@gmail.com">
+        Rob Taylor
+    </author>
+	
+	<preference name="phonegap-version" value="2.7.0" />
+
+</widget>
