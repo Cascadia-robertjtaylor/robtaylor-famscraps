@@ -1,6 +1,13 @@
     var pictureSource;   // picture source
     var destinationType; // sets the format of returned value 
-
+	var theImage;//makes it global
+	
+	$(document).ready(function(){
+		$("button").click(function(){
+			theImage = $(this).attr("id")+"Image";
+			capturePhoto();
+		});
+	});
     // Wait for Cordova to connect with the device
     //
     document.addEventListener("deviceready",onDeviceReady,false);
@@ -17,22 +24,21 @@
     function onPhotoDataSuccess(imageData) {
       // Uncomment to view the base64 encoded image data
       // console.log(imageData);
-
+		
       // Get image handle
       //
-      var smallImage = document.getElementById('smallImage');
-
+	  var imageObject = document.getElementById(theImage);
       // Unhide image elements
       //
-      smallImage.style.display = 'block';
+      imageObject.style.display = 'block';
 
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      smallImage.src = "data:image/jpeg;base64," + imageData;
+      imageObject.src = "data:image/jpeg;base64," + imageData;
     }
 
-    // Called when a photo is successfully retrieved
+/*    // Called when a photo is successfully retrieved
     //
     function onPhotoURISuccess(imageURI) {
       // Uncomment to view the image file URI 
@@ -51,15 +57,16 @@
       //
       largeImage.src = imageURI;
     }
-
+*/
     // A button will call this function
     //
     function capturePhoto() {
       // Take picture using device camera and retrieve image as base64-encoded string
       navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
         destinationType: destinationType.DATA_URL });
+		
     }
-
+/*
     // A button will call this function
     //
     function capturePhotoEdit() {
@@ -76,7 +83,7 @@
         destinationType: destinationType.FILE_URI,
         sourceType: source });
     }
-
+*/
     // Called if something bad happens.
     // 
     function onFail(message) {
